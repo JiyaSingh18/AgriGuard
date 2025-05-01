@@ -18,6 +18,7 @@
   "env": {
     "VITE_VECTARA_API_KEY": "@vectara_api_key",
     "VITE_VECTARA_CUSTOMER_ID": "@vectara_customer_id",
-    "VITE_VECTARA_CORPUS_ID": "@vectara_corpus_id"
+    "VITE_VECTARA_CORPUS_ID": "@vectara_corpus_id",
+    "VITE_GEMINI_API_KEY": "@gemini_api_key"
   }
 } 
