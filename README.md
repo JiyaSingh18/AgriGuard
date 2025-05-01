@@ -73,6 +73,7 @@ An advanced agricultural AI assistant using a RAG (Retrieval-Augmented Generatio
 - Node.js (v16 or higher)
 - npm or yarn
 - Git
+- Vercel account (for deployment)
 
 ### Installation
 
@@ -99,6 +100,48 @@ An advanced agricultural AI assistant using a RAG (Retrieval-Augmented Generatio
    ```bash
    npm run dev
    ```
+
+## 🌐 Deployment
+
+### Deploying to Vercel
+
+1. **Install Vercel CLI** (optional):
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Deploy using Vercel Dashboard**:
+   - Fork this repository
+   - Go to [Vercel Dashboard](https://vercel.com/dashboard)
+   - Click "New Project"
+   - Import your forked repository
+   - Configure environment variables:
+     - `VITE_VECTARA_API_KEY`
+     - `VITE_VECTARA_CUSTOMER_ID`
+     - `VITE_VECTARA_CORPUS_ID`
+   - Click "Deploy"
+
+3. **Deploy using Vercel CLI**:
+   ```bash
+   # Login to Vercel
+   vercel login
+
+   # Deploy
+   vercel
+   ```
+
+4. **Environment Variables**:
+   Set up the following environment variables in your Vercel project settings:
+   ```
+   VITE_VECTARA_API_KEY=your_api_key
+   VITE_VECTARA_CUSTOMER_ID=your_customer_id
+   VITE_VECTARA_CORPUS_ID=your_corpus_id
+   ```
+
+### Automatic Deployments
+- Every push to the `main` branch will trigger a production deployment
+- Pull requests will create preview deployments
+- Branch deployments are automatically created for feature branches
 
 ## 💻 Usage Examples
 
